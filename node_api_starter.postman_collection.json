@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "a448c74c-c880-4087-b63a-5a2d58f0ed75",
+		"name": "node_api_starter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get User By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/user/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_Name\": \"Mukhtiar111\",\r\n    \"Last_Name\": \"ahmad\",\r\n    \"User_Name\": \"ddddd\",\r\n    \"Active\":1\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/user/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserRegister",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_Name\": \"Mukhtiar\",\r\n    \"Last_Name\": \"ahmad\",\r\n    \"User_Name\": \"ddddd\",\r\n    \"Active\":1\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/user/register",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"First_Name\": \"Mukhtiar111\",\r\n    \"Last_Name\": \"ahmad\",\r\n    \"User_Name\": \"ddddd\",\r\n    \"Active\":1\r\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/v1/user/3",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
