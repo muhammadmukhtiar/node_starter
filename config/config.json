@@ -1,0 +1,19 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "node_starter",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3306",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": "",
+    "database": "node_starter_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
