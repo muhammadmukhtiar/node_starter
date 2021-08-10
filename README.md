@@ -28,6 +28,32 @@ We recommend [nvm](https://github.com/creationix/nvm) for managing multiple vers
 
 ## Getting Started
 
+To Run the starter you need to install xampp .you can download from here <a href="https://www.apachefriends.org/download.html">Download XAMPP</a>.
+Create a new database with name **node_starter** 
+Improat sql file or run the sql command inside data base.
+
+```
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `First_Name` varchar(100) NOT NULL,
+  `Last_Name` varchar(100) NOT NULL,
+  `User_Name` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Phone_Number` varchar(100) NOT NULL,
+  `Active` tinyint(4) NOT NULL,
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updatedAt` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `user`
+ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+````
+
 ## Setting up the local environment
 
 **Node.js**
@@ -44,7 +70,7 @@ git clone https://github.com/muhammadmukhtiar/node_starter.git
 ```
 
 ```
-cd node-api-starter-template
+cd node_starter
 
 ```
  
@@ -59,6 +85,18 @@ npm start
 Open browser or postman  application is running at <a href="http://localhost:3000" target="_blank" title="localhost">
 http://localhost:3000</a> 
 
+Now you can use Postman to test and develop API services.You can find postman collection file on this repo as well
+
+
+
+Feel free to contact me if need any help
+
+Name:Mukhtiar
+Email:mukhtiarfsd@gmail.com
+
+
+
+***Good Luck **
 
 
 
